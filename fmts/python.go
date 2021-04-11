@@ -38,4 +38,21 @@ func init() {
 		URL:         "https://github.com/psf/black",
 		Language:    lang,
 	})
+
+	register(&Fmt{
+		Name: "mypy",
+		Errorformat: []string{
+			`%f:%l:%c: %trror: %m`,
+			`%f:%l:%c: %tarning: %m`,
+			`%f:%l:%c: %tote: %m`,
+			`%f:%l: %trror: %m`,
+			`%f:%l: %tarning: %m`,
+			`%f:%l: %tote: %m`,
+			`%-GFound %\d\+ error%.%#`,
+			`%-GSuccess: %.%#`,
+		},
+		Description: "(mypy --show-column-numbers) Optional static typing for Python",
+		URL:         "https://github.com/python/mypy",
+		Language:    lang,
+	})
 }

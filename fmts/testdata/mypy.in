@@ -1,0 +1,8 @@
+test/test.py:220:70: error: Call to untyped function "test" in typed context  [no-untyped-call]
+test/subfolder/error.py:282: error: Function "datetime.datetime.date" is not valid as a type  [valid-type]
+test/subfolder/bar.py:282: note: Perhaps you need "Callable[...]" or a callback protocol?
+test/test/foo.py:35:5: error: Function is missing a type annotation for one or more arguments  [no-untyped-def]
+Found 4 errors in 4 files (checked 5 source files)
+Success: no issues found in 1 source file
+test/subfolder/syntax_error.py:1:5: error: invalid syntax
+Found 1 error in 1 file (errors prevented further checking)
